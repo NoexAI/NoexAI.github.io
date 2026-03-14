@@ -568,6 +568,20 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
+.services-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+}
+
+.service-step {
+    font-family: var(--font-main);
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(var(--accent-rgb), 0.08);
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
 .glass-card {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(20px);
@@ -981,6 +995,12 @@ h1, h2, h3, h4 {
         gap: 40px;
     }
 
+    .services-grid-3 {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
     .why-grid {
         grid-template-columns: 1fr;
         max-width: 560px;
@@ -1096,7 +1116,8 @@ h1, h2, h3, h4 {
         padding: 60px 0;
     }
 
-    .services-grid {
+    .services-grid,
+    .services-grid-3 {
         grid-template-columns: 1fr;
         max-width: 480px;
     }
